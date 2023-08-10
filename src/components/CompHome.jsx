@@ -1,4 +1,4 @@
-import image from "../assets/images/image.jpeg";
+import image from "../assets/images/image-fondo.jpg";
 
 const CompHome = () => {
   return (

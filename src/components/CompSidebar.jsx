@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 const CompSidebar = ({ logos }) => {
   return (
@@ -11,23 +12,26 @@ const CompSidebar = ({ logos }) => {
                 className="w-10 hover:-translate-y-1 hover:scale-110 transition"
                 key={index}
               >
-                <div className="relative group">
-                  <span
-                    className={`opacity-0 absolute top-0 bg-sky-950 text-white px-2 py-1 rounded-md transition-opacity group-hover:opacity-100 mt-2 mr-2 right-full ${
-                      item.name === "Sobre Mi" && "whitespace-nowrap"
-                    }`}
-                  >
-                    {item.name}
-                  </span>
-                  <img
-                    src={item.logo}
-                    alt={item.name}
-                    style={{
-                      filter:
-                        "brightness(0) invert(1) sepia(1) hue-rotate(260deg)",
-                    }}
-                  />
-                </div>
+                <NavLink to={`/${item.name}`}>
+                  <div className="relative group">
+                    <span
+                      className={`opacity-0 absolute top-0 bg-sky-950 text-white px-2 py-1 rounded-md transition-opacity group-hover:opacity-100 mt-2 mr-2 right-full ${
+                        item.name === "Sobre Mi" && "whitespace-nowrap"
+                      }`}
+                    >
+                      {item.name}
+                    </span>
+                    <img
+                      className="mb-2 mt-2"
+                      src={item.logo}
+                      alt={item.name}
+                      style={{
+                        filter:
+                          "brightness(0) invert(1) sepia(1) hue-rotate(260deg)",
+                      }}
+                    />
+                  </div>
+                </NavLink>
               </li>
             );
           })}
