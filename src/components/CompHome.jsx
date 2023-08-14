@@ -5,7 +5,7 @@ const CompHome = () => {
     <>
       <section
         id="home"
-        className="flex flex-col md:flex-row items-center h-screen text-sky-950"
+        className="flex flex-col md:flex-row items-center h-screen text-sky-950 dark:text-white"
       >
         <div className="w-full md:w-1/2 h-screen">
           <img src={image} alt="" className="h-full w-full md:object-cover" />
@@ -29,13 +29,15 @@ const CompHome = () => {
             Me encanta el emocionante mundo de la tecnología y cómo puede
             transformar la forma en que interactuamos con el mundo digital.
           </p>
-          <a
-            className="border border-sky-950 mt-20 rounded p-2 font-bold hover:bg-cyan-600 hover:text-white transition"
-            href=""
-            download
-          >
-            Descargar CV
-          </a>
+          <div className="mb-4">
+            <a
+              className="border border-sky-950 mt-20 mb-4 rounded p-2 font-bold hover:bg-cyan-600 hover:text-white transition download-link"
+              href=""
+              download
+            >
+              Descargar CV
+            </a>
+          </div>
         </div>
       </section>
     </>

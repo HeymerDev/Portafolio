@@ -8,6 +8,8 @@ import certificaciones from "./assets/icons/icon-certificaciones.svg";
 import CompHome from "./components/CompHome";
 import CompAboutMe from "./components/CompAboutMe";
 import CompPortafolio from "./components/CompPortafolio";
+import CompContacto from "./CompContacto";
+import CompCertificaciones from "./components/CompCertificaciones";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -50,6 +52,14 @@ const routes = [
   {
     path: "/Portafolio",
     element: <CompPortafolio />,
+  },
+  {
+    path: "/Certificaciones",
+    element: <CompCertificaciones />,
+  },
+  {
+    path: "/Contacto",
+    element: <CompContacto />,
   },
 ];
 

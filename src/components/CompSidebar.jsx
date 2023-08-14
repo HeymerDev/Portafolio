@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const CompSidebar = ({ logos }) => {
   return (
     <>
-      <nav className="bg-sky-950 p-2 absolute top-1/2 right-20 transform -translate-y-1/2 flex flex-col justify-center items-center rounded-full">
+      <nav className="bg-sky-950 p-2 absolute top-1/2 md:right-20 transform -translate-y-1/2 flex flex-col justify-center items-center rounded-full">
         <ul className="flex flex-col space-y-2 mb-5 mt-5">
           {logos.map((item, index) => {
             return (

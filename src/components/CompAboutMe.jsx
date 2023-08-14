@@ -35,18 +35,21 @@ const CompAboutMe = () => {
     <>
       <section
         id="about-me"
-        className="flex flex-col items-center justify-center h-screen text-sky-950"
+        className="flex flex-col items-center justify-center text-sky-950 px-4 py-8 md:px-8 lg:px-16 dark:text-white"
       >
-        <h2 className="text-8xl font-black mb-4 text-center md:text-5x mt-10">
+        <h2 className="text-4xl md:text-8xl font-black mb-4 text-center">
           Sobre Mí
         </h2>
 
-        <div id="description" className="w-full md:w-2/3 p-6">
-          <h3 className="text-3xl font-semibold mb-4 text-center md:text-2xl">
+        <div
+          id="description"
+          className="w-full md:w-2/3 lg:w-1/2 p-4 md:p-6 mb-8"
+        >
+          <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
             ¡Hola, soy <strong>Heymer Meza!</strong>
           </h3>
 
-          <p className="mb-6">
+          <p className="text-sm md:text-base mb-6">
             Soy un apasionado desarrollador frontend de 17 años, con un firme
             deseo de dar vida a las ideas a través de códigos y diseños
             cautivadores. Mi viaje en el mundo del desarrollo comenzó como un
@@ -87,18 +90,24 @@ const CompAboutMe = () => {
         </div>
 
         <div id="tecnologias" className="mb-8">
-          <h2 className="text-5xl font-black mb-3  text-center md:text-5x">
-            Mis Tecnologias:
+          <h2 className="text-4xl md:text-5xl font-black mb-3 text-center">
+            Mis Tecnologías:
           </h2>
 
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {tecnologias.map((tecs, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center p-4 hover:bg-gray-200 hover:scale-125 transition duration-300 ease-in-out"
+                className="flex flex-col items-center p-4 hover:bg-gray-200 hover:scale-105 transition duration-300 ease-in-out"
               >
-                <img src={tecs.image} alt={tecs.name} className="w-24 h-24" />
-                <h2 className="text-lg font-semibold">{tecs.name}</h2>
+                <img
+                  src={tecs.image}
+                  alt={tecs.name}
+                  className="w-20 h-20 md:w-24 md:h-24"
+                />
+                <h2 className="text-md md:text-lg font-semibold mt-2">
+                  {tecs.name}
+                </h2>
               </div>
             ))}
           </div>
