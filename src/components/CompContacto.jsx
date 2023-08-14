@@ -3,10 +3,12 @@ const CompContacto = () => {
     <>
       <section
         id="contacto"
-        className="py-16 text-cyan-950 h-screen flex flex-col justify-center"
+        className="py-16 text-cyan-950 min-h-screen flex flex-col justify-center items-center"
       >
-        <h2 className="text-6xl font-black text-center mb-10">Contacto</h2>
-        <div className="max-w-5xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-center mb-10">
+          Contacto
+        </h2>
+        <div className="max-w-5xl mx-auto text-left px-6 sm:px-8 md:px-12">
           <p className="text-left mb-6 text-xl">
             ¡Gracias por tu interés en contactarme! Tu decisión de conectarte
             conmigo es muy apreciada. Si estás aquí, es porque compartimos una
@@ -24,20 +26,18 @@ const CompContacto = () => {
             el desarrollo frontend, diseño de interfaces, tendencias
             tecnológicas o cualquier pregunta que puedas tener.
           </p>
-          <p className="text-xl text-left -mb-20">
+          <p className="text-xl text-left">
             Los siguientes son algunos de los medios por los cuales puedes
             contactarme. Siéntete libre de elegir el que más te convenga:
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center flex-grow -mt-20">
-          <h3 className="text-4xl text-center mb-4 font-medium ">
+        <div className="flex flex-col items-center justify-center flex-grow mt-10 w-full m-auto">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl mb-4 font-medium md:mx-auto ml-10">
             Puedes contactarme vía email, redes sociales o WhatsApp:
           </h3>
 
-          <div className="flex gap-8 mt-9">
-            {" "}
-            {/* Aumenta el espacio entre enlaces */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6 sm:mt-8 md:mt-10 w-full max-w-5xl mx-auto md:m-auto ml-28">
             <a
               href="mailto:heymermeza11@gmail.com"
               className="text-2xl text-blue-600 hover:underline flex items-center"
@@ -102,7 +102,7 @@ const CompContacto = () => {
               WhatsApp
             </a>
           </div>
-          <div className="mb-4 mt-20 ">
+          <div className="mb-4 mt-10 sm:mt-16">
             <a
               className="border border-sky-950 mt-20 mb-4 rounded p-2 font-bold hover:bg-cyan-600 hover:text-white transition download-link"
               href=""
