@@ -4,7 +4,7 @@ const CompBotonDescargar = () => {
   return (
     <>
       <a
-        className="border border-sky-950 mt-20 mb-4 rounded p-2 font-normal hover:bg-cyan-600 hover:text-white transition download-link"
+        className="border border-sky-950 mt-20 mb-4 rounded p-2 font-semibold hover:bg-cyan-600 hover:text-white transition download-link"
         href={cv}
         download
       >
