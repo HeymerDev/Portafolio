@@ -1,4 +1,5 @@
 import image from "../assets/images/image-fondo.jpg";
+import CompBotonDescargar from "./CompBotonDescargar";
 
 const CompHome = () => {
   return (
@@ -30,13 +31,7 @@ const CompHome = () => {
             transformar la forma en que interactuamos con el mundo digital.
           </p>
           <div className="mb-4">
-            <a
-              className="border border-sky-950 mt-20 mb-4 rounded p-2 font-bold hover:bg-cyan-600 hover:text-white transition download-link"
-              href=""
-              download
-            >
-              Descargar CV
-            </a>
+            <CompBotonDescargar />
           </div>
         </div>
       </section>

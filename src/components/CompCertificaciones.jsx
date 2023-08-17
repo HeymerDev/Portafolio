@@ -1,13 +1,14 @@
-import javaScript from "../assets/images/images-certificados/certificado-javascript.jpg";
 import programacionBasica from "../assets/images/images-certificados/image-programacion.jpg";
 import gitAndGithub from "../assets/images/images-certificados/certificado-git-github.png";
+import CompCards from "./CompCards";
 
 const certificados = [
   {
     name: "Aprende JavaScript de CERO a EXPERTO",
     link: "https://www.udemy.com/certificate/UC-f271b4e9-9e51-4b97-b8ca-8721817d9e13/",
     id: "UC-f271b4e9-9e51-4b97-b8ca-8721817d9e13",
-    image: javaScript,
+    image:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-f271b4e9-9e51-4b97-b8ca-8721817d9e13.jpg?v=1689111057000",
   },
   {
     name: "Curso Gratis de Programación Básica",
@@ -21,57 +22,33 @@ const certificados = [
     id: "9f87c932-20e2-4716-9d4e-9fca4fd06d55",
     image: gitAndGithub,
   },
+  {
+    name: " Master en Frameworks JavaScript: Aprende Angular, React, Vue",
+    link: "https://www.udemy.com/certificate/UC-8d4fc1ae-a435-4a89-a2a8-94dc61af7a7d/",
+    id: "UC-8d4fc1ae-a435-4a89-a2a8-94dc61af7a7d",
+    image:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-8d4fc1ae-a435-4a89-a2a8-94dc61af7a7d.jpg?v=1692253620000",
+  },
 ];
 
 const CompCertificaciones = () => {
   return (
     <>
       <section id="certificados" className="py-16 text-cyan-950">
-        <h2 className="text-6xl font-black text-center mb-10">Certificados</h2>
+        <h2 className="text-4xl md:text-8xl font-black text-center mb-10">
+          Certificados
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 place-items-center p-2 md:m-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 place-items-center p-2 md:m-20">
           {certificados.map((certificado, i) => (
-            <div
+            <CompCards
               key={i}
-              className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                className="rounded-t-lg"
-                src={certificado.image}
-                alt={certificado.name}
-              />
-              <div className="p-5">
-                <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {certificado.name}
-                </h4>
-
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  {certificado.id}
-                </p>
-
-                <a
-                  href={certificado.link}
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Ver Credencial
-                  <svg
-                    className="w-3.5 h-3.5 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
+              title={certificado.name}
+              description={certificado.id}
+              image={certificado.image}
+              link={certificado.link}
+              uso={"Ver Credencial"}
+            />
           ))}
         </div>
       </section>

@@ -49,7 +49,7 @@ const CompAboutMe = () => {
             ¡Hola, soy <strong>Heymer Meza!</strong>
           </h3>
 
-          <p className="text-sm md:text-base mb-6">
+          <p className="text-sm md:text-xl mb-6 font-light">
             Soy un apasionado desarrollador frontend de 17 años, con un firme
             deseo de dar vida a las ideas a través de códigos y diseños
             cautivadores. Mi viaje en el mundo del desarrollo comenzó como un
@@ -81,11 +81,7 @@ const CompAboutMe = () => {
             con tecnologías como HTML, CSS, JavaScript, React y Angular. Cada
             proyecto es una oportunidad para superar límites y perfeccionar mi
             oficio, y estoy emocionado de seguir evolucionando en este
-            emocionante viaje de desarrollo frontend. Este texto ampliado
-            destaca tu compromiso y pasión como desarrollador frontend, y
-            también menciona las tecnologías específicas que utilizas para crear
-            experiencias digitales excepcionales. Asegúrate de personalizarlo
-            según tus experiencias y enfoque particular.
+            emocionante viaje de desarrollo frontend.
           </p>
         </div>
 

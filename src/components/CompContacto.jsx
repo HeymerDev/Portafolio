@@ -1,14 +1,44 @@
+import CompBotonDescargar from "./CompBotonDescargar";
+
+const redes = [
+  {
+    link: "mailto:heymermeza11@gmail.com",
+    image: "https://www.svgrepo.com/show/349378/gmail.svg",
+    name: "Gmail",
+  },
+  {
+    link: "https://www.linkedin.com/in/heymer/",
+    image: "https://www.svgrepo.com/show/448234/linkedin.svg",
+    name: "LinkedIn",
+  },
+  {
+    link: "https://github.com/HeymerDev",
+    image: "https://www.svgrepo.com/show/512317/github-142.svg",
+    name: "GitHub",
+  },
+  {
+    link: "https://candidato.co.computrabajo.com/candidate/home?idapp=3&f=FEE939887FF3D46C",
+    image: "https://cp.ct-stc.com/web/20230808.01/c/img/logos/favicon_ct.svg",
+    name: "Computrabajo",
+  },
+  {
+    link: "https://wa.me/+573042041975",
+    image: "https://www.svgrepo.com/show/349563/whatsapp.svg",
+    name: "WhatsApp",
+  },
+];
+
 const CompContacto = () => {
   return (
     <>
       <section
         id="contacto"
-        className="py-16 text-cyan-950 min-h-screen flex flex-col justify-center items-center"
+        className="py-16 text-cyan-950 min-h-screen flex flex-col justify-center items-center dark:text-white"
       >
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-center mb-10">
+        <h2 className="text-4xl sm:text-5xl md:text-8xl font-black text-center mb-10">
           Contacto
         </h2>
-        <div className="max-w-5xl mx-auto text-left px-6 sm:px-8 md:px-12">
+        <div className="max-w-5xl mx-auto text-left px-6 sm:px-8 md:px-12 font-light">
           <p className="text-left mb-6 text-xl">
             ¡Gracias por tu interés en contactarme! Tu decisión de conectarte
             conmigo es muy apreciada. Si estás aquí, es porque compartimos una
@@ -32,84 +62,30 @@ const CompContacto = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center flex-grow mt-10 w-full m-auto">
-          <h3 className="text-3xl sm:text-4xl md:text-5xl mb-4 font-medium md:mx-auto ml-10">
-            Puedes contactarme vía email, redes sociales o WhatsApp:
+        <div className="flex flex-col items-center flex-grow mt-10 w-full m-auto px-6  sm:px-8 md:pl-20">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl mb-4 font-medium md:mx-auto mr-2">
+            Puedes contactarme por:
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6 sm:mt-8 md:mt-10 w-full max-w-5xl mx-auto md:m-auto ml-28">
-            <a
-              href="mailto:heymermeza11@gmail.com"
-              className="text-2xl text-blue-600 hover:underline flex items-center"
-            >
-              <img
-                src="https://www.svgrepo.com/show/349378/gmail.svg"
-                alt="Gmail"
-                className="w-10 h-10 mr-3" // Aumenta el tamaño de la imagen
-              />
-              Gmail
-            </a>
-            <a
-              href="https://www.linkedin.com/in/heymer/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-blue-600 hover:underline flex items-center"
-            >
-              <img
-                src="https://www.svgrepo.com/show/448234/linkedin.svg"
-                alt="LinkedIn"
-                className="w-10 h-10 mr-3" // Aumenta el tamaño de la imagen
-              />
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/HeymerDev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-blue-600 hover:underline flex items-center"
-            >
-              <img
-                src="https://www.svgrepo.com/show/512317/github-142.svg"
-                alt="GitHub"
-                className="w-10 h-10 mr-3" // Aumenta el tamaño de la imagen
-              />
-              GitHub
-            </a>
-            <a
-              href="https://candidato.co.computrabajo.com/candidate/home?idapp=3&f=FEE939887FF3D46C"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-blue-600 hover:underline flex items-center"
-            >
-              <img
-                src="https://cp.ct-stc.com/web/20230808.01/c/img/logos/favicon_ct.svg"
-                alt="computrabajo"
-                className="w-10 h-10 mr-3" // Aumenta el tamaño de la imagen
-              />
-              Computrabajo
-            </a>
-            <a
-              href="https://wa.me/+573042041975"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-blue-600 hover:underline flex items-center"
-            >
-              <img
-                src="https://www.svgrepo.com/show/349563/whatsapp.svg"
-                alt="WhatsApp"
-                className="w-10 h-10 mr-3" // Aumenta el tamaño de la imagen
-              />
-              WhatsApp
-            </a>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mt-6 sm:mt-8 md:mt-10 w-full max-w-5xl mx-auto md:m-auto ml-28">
+            {redes.map((red, i) => (
+              <a
+                key={i}
+                href={red.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl text-blue-600 hover:underline flex items-center p-5"
+              >
+                <img
+                  src={red.image}
+                  alt={red.name}
+                  className="mr-3 hover:scale-105 transition-all duration-300 w-28 h-28"
+                />
+              </a>
+            ))}
           </div>
           <div className="mb-4 mt-10 sm:mt-16">
-            <a
-              className="border border-sky-950 mt-20 mb-4 rounded p-2 font-bold hover:bg-cyan-600 hover:text-white transition download-link"
-              href=""
-              download
-            >
-              Descargar CV
-            </a>
+            <CompBotonDescargar />
           </div>
         </div>
       </section>
