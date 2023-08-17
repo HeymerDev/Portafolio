@@ -26,7 +26,7 @@ const CompHome = () => {
           <h2 className="text-sm font-semibold md:text-4xl">
             Ingeniero de Sistemas
           </h2>
-          <p className="text-sm font-normal md:text-2xl mt-6 w-2/3 mb-8">
+          <p className="text-sm font-light md:text-2xl mt-6 w-2/3 mb-8">
             Me encanta el emocionante mundo de la tecnología y cómo puede
             transformar la forma en que interactuamos con el mundo digital.
           </p>
