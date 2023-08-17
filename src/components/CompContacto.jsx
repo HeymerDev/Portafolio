@@ -38,7 +38,7 @@ const CompContacto = () => {
         <h2 className="text-4xl sm:text-5xl md:text-8xl font-black text-center mb-10">
           Contacto
         </h2>
-        <div className="max-w-5xl mx-auto text-left px-6 sm:px-8 md:px-12 font-ligth">
+        <div className="max-w-5xl mx-auto text-left px-6 sm:px-8 md:px-12 font-light">
           <p className="text-left mb-6 text-xl">
             ¡Gracias por tu interés en contactarme! Tu decisión de conectarte
             conmigo es muy apreciada. Si estás aquí, es porque compartimos una
