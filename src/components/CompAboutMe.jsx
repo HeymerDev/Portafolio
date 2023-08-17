@@ -49,7 +49,7 @@ const CompAboutMe = () => {
             ¡Hola, soy <strong>Heymer Meza!</strong>
           </h3>
 
-          <p className="text-sm md:text-xl mb-6 font-base">
+          <p className="text-sm md:text-xl mb-6 font-normal">
             Soy un apasionado desarrollador frontend de 17 años, con un firme
             deseo de dar vida a las ideas a través de códigos y diseños
             cautivadores. Mi viaje en el mundo del desarrollo comenzó como un
