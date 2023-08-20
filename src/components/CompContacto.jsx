@@ -39,7 +39,7 @@ const CompContacto = () => {
           Contacto
         </h2>
         <div className="max-w-5xl mx-auto text-left px-6 sm:px-8 md:px-12 font-light">
-          <p className="text-left mb-6 text-xl">
+          <p className="text-left mb-6 md:text-xl text-sm">
             ¡Gracias por tu interés en contactarme! Tu decisión de conectarte
             conmigo es muy apreciada. Si estás aquí, es porque compartimos una
             pasión por la tecnología y la innovación. Ya sea que tengas una idea
@@ -48,7 +48,7 @@ const CompContacto = () => {
             desarrollo y diseño, estaré encantado de escucharte y responder tus
             mensajes.
           </p>
-          <p className="text-xl text-left mb-6">
+          <p className="md:text-xl text-left mb-6 text-sm">
             Tengo la firme creencia de que las grandes ideas surgen de
             conversaciones significativas. Por eso, te invito a que te
             comuniques conmigo a través de los diferentes canales disponibles.
@@ -56,7 +56,7 @@ const CompContacto = () => {
             el desarrollo frontend, diseño de interfaces, tendencias
             tecnológicas o cualquier pregunta que puedas tener.
           </p>
-          <p className="text-xl text-left">
+          <p className="md:text-xl text-left text-sm">
             Los siguientes son algunos de los medios por los cuales puedes
             contactarme. Siéntete libre de elegir el que más te convenga:
           </p>

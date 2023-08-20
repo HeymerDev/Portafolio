@@ -15,7 +15,7 @@ const proyectos = [
 const CompPortafolio = () => {
   return (
     <>
-      <section id="proyectos" className="py-16 text-cyan-950">
+      <section id="proyectos" className="py-16 text-cyan-950 dark:text-white">
         <h2 className="text-4xl md:text-8xl font-black text-center mb-10">
           Proyectos
         </h2>
