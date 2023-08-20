@@ -67,19 +67,19 @@ const CompContacto = () => {
             Puedes contactarme por:
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mt-6 sm:mt-8 md:mt-10 w-full max-w-5xl mx-auto md:m-auto ml-28">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-6 sm:mt-8 md:mt-10 w-full max-w-5xl mx-auto md:m-auto items-center">
             {redes.map((red, i) => (
               <a
                 key={i}
                 href={red.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl text-blue-600 hover:underline flex items-center p-5"
+                className="text-2xl text-blue-600 hover:underline m-auto"
               >
                 <img
                   src={red.image}
                   alt={red.name}
-                  className="mr-3 hover:scale-105 transition-all duration-300 w-28 h-28"
+                  className="hover:scale-105 transition-all duration-300 w-28 h-28"
                 />
               </a>
             ))}
