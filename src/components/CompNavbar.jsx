@@ -2,45 +2,60 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "hamburgers/dist/hamburgers.min.css";
+import "../stylesheets/CompNavbar.css";
 
 const CompNavbar = ({ logos }) => {
-  const [showLogos, setShowLogos] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  const handleIconClick = () => {
-    setShowLogos(!showLogos);
-  };
+  const handleShowMenu = () => setShowMenu(!showMenu);
 
   return (
     <nav
-      className={`fixed top-0 left-0 p-4 text-sky-950 dark:text-white dark:bg-sky-950 ${
-        showLogos === true && "bg-white"
-      } lg:hidden`}
+      className={`fixed top-0 left-0 p-4 z-50 text-sky-950 dark:text-white dark:bg-sky-950 sm:hidden`}
     >
-      <div
-        className={`hamburger hamburger--squeeze ${
-          showLogos === true && "is-active"
+      {/* Hamburger Button */}
+      <button
+        className={`hamburger hamburger--collapse ${
+          showMenu ? "is-active" : ""
         }`}
-        onClick={handleIconClick}
+        type="button"
+        onClick={handleShowMenu}
       >
-        <div className="hamburger-box">
+        <span className="hamburger-box ">
           <span className="hamburger-inner"></span>
-        </div>
-      </div>
+        </span>
+      </button>
 
-      {showLogos && (
-        <ul className={`mt-4 ${showLogos ? "enter" : "leave"}`}>
-          {logos.map((logo, i) => (
-            <li
-              key={i}
-              className={`py-2 transform transition-transform duration-300 delay-${
-                i + 1
-              } hover:scale-105`}
-            >
-              <Link to={`/${logo.name}`}> {logo.name}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      {/* Aside Panel */}
+
+      <aside
+        className={`aside-panel w-3/5 ${
+          showMenu ? "panel-active" : "panel-not-active"
+        } max-w-lg`}
+      >
+        <div className="aside-panel-inner bg-white border border-gray-200 text-gray-900 text-sm ">
+          <section
+            aria-current="true"
+            className="aside-panel-title px-4 py-2 border-b border-gray-200 bg-blue-700 "
+          >
+            {/* En esta seccion puedes agregar un titulo al menú */}
+          </section>
+          <section className="aside-panel-text">
+            {logos.map((logo, i) => (
+              <Link
+                key={i}
+                className={`block break-all font-medium text-base px-4 py-2 border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer delay-${
+                  i + 1
+                }`}
+                to={`/${logo.name}`}
+              >
+                {" "}
+                {logo.name}
+              </Link>
+            ))}
+          </section>
+        </div>
+      </aside>
     </nav>
   );
 };
