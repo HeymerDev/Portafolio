@@ -14,7 +14,7 @@
 }
 
 .aside-panel-text {
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -31,11 +31,11 @@
 }
 
 .panel-not-active {
-  transform: translateX(-200%);
+  transform: translateX(-150%);
 }
 
 .panel-active {
-  transform: translateX(0);
+  transform: translateX(-50);
 }
 
 .aside-panel-title {
@@ -49,8 +49,14 @@
   z-index: 9999;
 }
 
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  background-color: #fff;
+.hamburguer-dark {
+  background-color: white;
+}
+
+.image-dark {
+  background-color: white;
+}
+
+.custom-no-outline:focus {
+  outline: none !important;
 }

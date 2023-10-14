@@ -11,7 +11,7 @@ const CompHome = () => {
         <div className="w-full md:w-1/2 h-screen">
           <img src={image} alt="" className="h-full w-full md:object-cover" />
         </div>
-        <div className="w-full md:w-2/3 mx-auto md:ml-7 md:mr-10 mt-8 md:mt-0 pl-20">
+        <div className="w-full md:w-2/3 mx-auto md:ml-7 md:mr-10 mt-8 md:mt-0 pl-20 flex-wrap">
           <h1 className="text-4xl md:text-7xl font-semibold pb-3 md:pb-7 ">
             Hola! Soy{" "}
             <span className="relative inline-block">

@@ -10,7 +10,6 @@ import CompAboutMe from "./components/CompAboutMe";
 import CompPortafolio from "./components/CompPortafolio";
 import CompContacto from "./components/CompContacto";
 import CompCertificaciones from "./components/CompCertificaciones";
-import CompNavbar from "./components/CompNavbar";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -68,7 +67,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <CompNavbar logos={logos} />
         <CompSidebar logos={logos} />
         <Routes>
           {/* The code block 

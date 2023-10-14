@@ -8,6 +8,10 @@ const tecnologias = [
     image: "https://www.svgrepo.com/show/452185/css-3.svg",
   },
   {
+    name: "Tailwind CSS",
+    image: "https://www.svgrepo.com/show/374118/tailwind.svg",
+  },
+  {
     name: "JavaScript",
     image: "https://www.svgrepo.com/show/353925/javascript.svg",
   },
@@ -19,6 +23,10 @@ const tecnologias = [
   {
     name: "Angular",
     image: "https://www.svgrepo.com/show/452156/angular.svg",
+  },
+  {
+    name: "Vue",
+    image: "https://www.svgrepo.com/show/452130/vue.svg",
   },
   {
     name: "Git",
@@ -94,12 +102,14 @@ const CompAboutMe = () => {
             {tecnologias.map((tecs, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center p-4 hover:bg-gray-200 hover:scale-105 transition duration-300 ease-in-out"
+                className={`flex flex-col items-center p-4 hover:bg-gray-200 hover:scale-105 transition duration-300 ease-in-out`}
               >
                 <img
                   src={tecs.image}
                   alt={tecs.name}
-                  className="w-20 h-20 md:w-24 md:h-24"
+                  className={`w-20 h-20 md:w-24 md:h-24 ${
+                    tecs.name === "React" && "animate-spin-slow"
+                  }`}
                 />
                 <h2 className="text-md md:text-lg font-semibold mt-2">
                   {tecs.name}
