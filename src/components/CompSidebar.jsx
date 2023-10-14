@@ -65,7 +65,7 @@ const CompSidebar = ({ logos }) => {
           </button>
 
           <aside
-            className={`aside-panel w-2/5 ${
+            className={`aside-panel sm:w-2/5 w-3/5 ${
               showMenu ? "panel-active" : "panel-not-active"
             } max-w-lg`}
           >
