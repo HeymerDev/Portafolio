@@ -29,6 +29,13 @@ const certificados = [
     image:
       "https://udemy-certificate.s3.amazonaws.com/image/UC-8d4fc1ae-a435-4a89-a2a8-94dc61af7a7d.jpg?v=1692253620000",
   },
+  {
+    name: "JavaScript: Desde cero con NodeJS",
+    link: "https://www.udemy.com/certificate/UC-e3c5cb14-c95e-4eab-b24c-af69fc602979/",
+    id: "UC-e3c5cb14-c95e-4eab-b24c-af69fc602979",
+    image:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-e3c5cb14-c95e-4eab-b24c-af69fc602979.jpg?v=1689111057000",
+  },
 ];
 
 const CompCertificaciones = () => {
