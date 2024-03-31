@@ -13,6 +13,19 @@ export default {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
+        scroll: "scroll 20s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          "0%": {
+            transform: "translateY(0)",
+            "-webkit-transform": "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(calc(-250px * 7))",
+            "-webkit-transform": "translateX(calc(-250px * 7))",
+          },
+        },
       },
     },
   },

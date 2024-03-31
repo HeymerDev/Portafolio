@@ -1,7 +1,7 @@
 const Button = () => {
   return (
     <a
-      className="btn btn-primary"
+      className="btn btn-accent text-slate-200 w-[120px]"
       download
       href="../assets/resources/Curriculum CV Heymer Meza.pdf"
     >
