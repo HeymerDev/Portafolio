@@ -1,11 +1,14 @@
+import IconDownload from "../assets/icons/IconDownload";
+
 const Button = () => {
   return (
     <a
-      className="btn btn-accent text-slate-200 w-[120px]"
+      className="btn btn-accent text-slate-200 w-[160px] font-extralight"
       download
       href="../assets/resources/Curriculum CV Heymer Meza.pdf"
     >
-      Descargar
+      <IconDownload className="-mx-3" />
+      Descargar CV
     </a>
   );
 };

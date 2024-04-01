@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const AboutMe = ({ tecnologias }) => {
   return (
     <section
-      className="grid place-items-center bg-base-200 absolute sm:px-[250px] min-h-max py-8"
+      className="grid place-items-center bg-base-200 sm:px-[250px] min-h-max pt-[65px] transition-all ease-in-out duration-700"
       id="about"
     >
       <h2 className="font-semibold text-5xl md:text-7xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
