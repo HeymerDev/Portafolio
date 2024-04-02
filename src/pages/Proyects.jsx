@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
-import IconGitHub from "../assets/icons/IconGitHub";
-import IconWeb from "../assets/icons/IconWeb";
+import Card from "../components/Card";
 
 const Proyects = ({ items }) => {
   return (
@@ -13,26 +12,14 @@ const Proyects = ({ items }) => {
       </h2>
       <article className="grid place-items-center gap-6 sm:grid-cols-4">
         {items.map((item) => (
-          <div
-            className="card w-96 bg-base-100 shadow-xl image-full hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
+          <Card
             key={item.id}
-          >
-            <figure>
-              <img src={item.img} alt={item.title} />
-            </figure>
-            <div className="card-body">
-              <h3 className="card-title">{item.title}</h3>
-              <p>{item.content}</p>
-              <div className="card-actions justify-end">
-                <a href={item.links.github} target="_blank" rel="noreferrer">
-                  <IconGitHub />
-                </a>
-                <a href={item.links.web} target="_blank" rel="noreferrer">
-                  <IconWeb />
-                </a>
-              </div>
-            </div>
-          </div>
+            title={item.title}
+            content={item.content}
+            image={item.img}
+            github={item.links.github}
+            web={item.links.web}
+          />
         ))}
       </article>
     </section>

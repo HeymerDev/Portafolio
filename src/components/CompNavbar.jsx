@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
+
 import ButtonTheme from "./ButtonTheme";
 
-const CompNavbar = () => {
+const CompNavbar = ({ links }) => {
   return (
     <>
       <nav className="fixed flex items-center justify-around p-3 backdrop-blur-xl transition-all ease-out duration-700 bg-transparent w-screen">
@@ -11,15 +13,16 @@ const CompNavbar = () => {
         </div>
 
         <ul className="sm:flex items-center gap-6 font-light text-lg hidden">
-          <li>
-            <a href="#home">Inicio</a>
-          </li>
-          <li>
-            <a href="#about">Sobre mí</a>
-          </li>
-          <li>
-            <a href="#proyects">Proyectos</a>
-          </li>
+          {links.map((link) => (
+            <li key={link.id}>
+              <a
+                href={link.url}
+                className="hover:text-accent transition-all duration-300 ease-in-out hover:border-b-2 hover:border-accent"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <div>
@@ -28,6 +31,10 @@ const CompNavbar = () => {
       </nav>
     </>
   );
+};
+
+CompNavbar.propTypes = {
+  links: PropTypes.array.isRequired,
 };
 
 export default CompNavbar;

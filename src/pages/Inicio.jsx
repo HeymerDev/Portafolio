@@ -4,13 +4,13 @@ import Button from "../components/Button";
 const Inicio = () => {
   return (
     <section
-      className="hero min-h-screen bg-base-200 transition-all ease-in-out duration-700 sm:relative"
+      className="hero min-h-screen bg-base-200 transition-all ease-in-out duration-700"
       id="home"
     >
       <div className="hero-content flex-col lg:flex-row px-12">
         <img
           src={imageInicio}
-          className="max-w-sm rounded-lg shadow-2xl sm:mt-0 mt-[50px]"
+          className="sm:max-w-sm rounded-lg shadow-2xl sm:mt-0 mt-[50px]"
         />
         <div>
           <h1 className="md:text-7xl font-normal text-5xl md:text-center lg:text-left">
