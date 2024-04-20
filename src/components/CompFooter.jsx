@@ -4,7 +4,7 @@ import Icon from "../assets/icons/Icon";
 
 const CompFooter = ({ redes }) => {
   return (
-    <footer className="sm:footer sm:footer-center pb-7 bg-neutral text-white transition-all ease-in-out duration-700 flex items-center justify-evenly">
+    <footer className="sm:footer sm:footer-center pb-7 bg-neutral text-white transition-all ease-in-out duration-700 flex items-center justify-evenly z-50">
       <aside>
         <Icon
           size={200}
