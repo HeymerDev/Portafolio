@@ -12,25 +12,25 @@ const AboutMe = ({ tecnologias }) => {
 
       <article className="p-10 mx-auto">
         <p>
-          Mi nombre es Heymer Jose Meza Gutierrez. Tengo 18 años de edad, Nacido
-          En la Ciudad de barranquilla, Atlantico, Colombia. Soy un estudiante
-          de ingenieria de Sistemas apasionado por la tecnologia y la inovacion.
-          Mi pasion por esta misma comenzo a mis 13 años de edad desde que en la
-          escuela practicaba programacion con Arduino y el leguaje C++, desde
-          entonces he estado en constante aprendizaje y crecimiento en el mundo
-          de la tecnologia incluso estudiando como carrera profesional
-          Ingenieria de Sistemas. Hoy dia soy Desarrallodor Web Frontend
-          Autodidacta, las tecnologias de las cuales poseo parctica y
-          conocimiento son: HTML, CSS, JavaScript, React, Vue, Angular, Firebase
-          TailwindCSS, Bootstrap. Ademas de tener amplios conocimientos en el
-          FrontEnd, conozco bases de tcnologias BackEnd como NodeJS, Express,
-          MongoDB. Me considero una persona proactiva, con facilidad para
-          trabajar en equipo, con capacidad de aprendizaje y adaptacion a nuevos
-          entornos y situaciones, con habilidades para la resolucion de
-          problemas y toma de decisiones. Me gusta trabajar en proyectos que me
-          permitan aprender y crecer profesionalmente, siempre dispuesto a
-          aportar mis conocimientos y habilidades en pro de los objetivos de la
-          empresa o equipo de trabajo.
+          Mi nombre es Heymer José Meza Gutiérrez. Tengo 18 años de edad, nacido
+          en la ciudad de Barranquilla, Atlántico, Colombia. Soy un estudiante
+          de ingeniería de sistemas apasionado por la tecnología y la
+          innovación. Mi pasión por esta misma comenzó a mis 13 años de edad,
+          desde que en la escuela practicaba programación con Arduino y el
+          lenguaje C++. Desde entonces he estado en constante aprendizaje y
+          crecimiento en el mundo de la tecnología, incluso estudiando como
+          carrera profesional ingeniería de sistemas. Hoy día soy desarrollador
+          web frontend autodidacta. Las tecnologías de las cuales poseo práctica
+          y conocimiento son: HTML, CSS, JavaScript, React, Vue, Angular,
+          Firebase y TailwindCSS, Bootstrap. Además de tener amplios
+          conocimientos en el frontend, conozco bases de tecnologías backend
+          como NodeJS, Express y MongoDB. Me considero una persona proactiva,
+          con facilidad para trabajar en equipo, con capacidad de aprendizaje y
+          adaptación a nuevos entornos y situaciones, con habilidades para la
+          resolución de problemas y toma de decisiones. Me gusta trabajar en
+          proyectos que me permitan aprender y crecer profesionalmente, siempre
+          dispuesto a aportar mis conocimientos y habilidades en pro de los
+          objetivos de la empresa o equipo de trabajo.
         </p>
 
         <div className="md:grid-col-6 gap-5 mt-10 grid grid-cols-4 place-items-center">
