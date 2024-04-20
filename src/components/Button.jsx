@@ -5,7 +5,7 @@ const Button = () => {
     <a
       className="btn btn-accent text-slate-200 w-[160px] font-extralight"
       download
-      href="../assets/resources/Curriculum CV Heymer Meza.pdf"
+      href="https://drive.google.com/file/d/106TB7SIV30hCuDirSUrC7igSVH8qLlMJ/view?usp=drive_link"
     >
       <IconDownload className="-mx-3" />
       Descargar CV
