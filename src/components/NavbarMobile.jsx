@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const NavbarMobile = ({ links }) => {
   return (
-    <nav className="sm:hidden w-screen bg-base-200 fixed bottom-0 flex justify-center">
+    <nav className="sm:hidden w-screen bg-base-200 fixed bottom-0 flex justify-center z-[999]">
       <ul className="menu menu-horizontal bg-base-200 rounded-box">
         {links.map((link) => (
           <li key={link.id}>
