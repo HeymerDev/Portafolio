@@ -10,7 +10,7 @@ const Proyects = ({ items }) => {
       <h2 className="font-semibold text-5xl md:text-7xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Proyectos
       </h2>
-      <article className="grid place-items-center gap-6 sm:grid-cols-4">
+      <article className="grid place-items-center gap-6 sm:grid-cols-3">
         {items.map((item) => (
           <Card
             key={item.id}
