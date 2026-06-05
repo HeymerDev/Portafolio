@@ -1,7 +1,23 @@
+---
+import { jobs } from "@/data/jobs";
+import CardExperience from "../cards/CardExperience.astro";
+---
+
 <section class="mb-section-gap" id="experiencia">
   <h2 class="font-headline-md text-headline-md text-primary mb-8">
     Experiencia Laboral
   </h2>
 
-  <div class="space-y-stack-gap"></div>
+  <div class="space-y-stack-gap">
+    {
+      jobs.map((job) => (
+        <CardExperience
+          image={job.image}
+          jobName={job.jobNmae}
+          jobDescription={job.jobDescription}
+          workAges={job.workAges}
+        />
+      ))
+    }
+  </div>
 </section>
