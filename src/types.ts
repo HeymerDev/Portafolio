@@ -9,3 +9,9 @@ export interface Jobs {
   jobDescription: string;
   workAges: string;
 }
+
+export interface Education {
+  schoolName: string;
+  degree: string;
+  schoolAges: string;
+}

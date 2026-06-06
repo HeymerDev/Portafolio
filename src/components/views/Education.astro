@@ -1,0 +1,19 @@
+---
+import { educations } from "@/data/educations";
+import CardEducation from "../cards/CardEducation.astro";
+---
+
+<section class="mb-section-gap">
+  <h2 class="font-headline-md text-headline-md text-primary mb-8">Educación</h2>
+  <div class="space-y-stack-gap">
+    {
+      educations.map((education) => (
+        <CardEducation
+          schoolName={education.schoolName}
+          degree={education.degree}
+          schoolAges={education.schoolAges}
+        />
+      ))
+    }
+  </div>
+</section>
