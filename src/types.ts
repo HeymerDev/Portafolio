@@ -15,3 +15,8 @@ export interface Education {
   degree: string;
   schoolAges: string;
 }
+
+export interface Skill {
+  id: number;
+  name: string;
+}
