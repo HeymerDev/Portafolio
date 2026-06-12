@@ -20,3 +20,9 @@ export interface Skill {
   id: number;
   name: string;
 }
+
+export interface SocialNetwork {
+  name: string;
+  link: string;
+  icon: string;
+}

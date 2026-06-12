@@ -1,0 +1,31 @@
+---
+import { socialNetworks } from "@/data/SocialNetworks";
+import CardSocialNetwork from "../cards/CardSocialNetwork.astro";
+---
+
+<section class="mb-section-gap text-center pt-20" id="contacto">
+  <span
+    class="px-3 py-1 bg-surface-container-high text-primary font-label-sm text-label-sm rounded-lg inline-block mb-4"
+    >Contacto</span
+  >
+  <h2 class="font-headline-xl text-headline-xl text-primary mb-6">
+    Ponte en contacto
+  </h2>
+  <p
+    class="font-body-lg text-body-lg text-muted-foreground mb-12 max-w-150 mx-auto"
+  >
+    ¿Quieres charlar? Envíame un mensaje directo por Twitter y responderé cuando
+    pueda.
+  </p>
+  <div class="flex justify-center gap-8">
+    {
+      socialNetworks.map((network) => (
+        <CardSocialNetwork
+          link={network.link}
+          socialName={network.name}
+          icon={network.icon}
+        />
+      ))
+    }
+  </div>
+</section>
