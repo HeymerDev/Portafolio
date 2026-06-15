@@ -20,7 +20,7 @@ export const socialNetworks: SocialNetwork[] = [
 
   {
     name: "TikTok",
-    link: "https://www.tiktok.com/@heymerdev",
+    link: "https://www.tiktok.com/@heymerm",
     icon: "videocam",
   },
 ];
