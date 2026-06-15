@@ -1,0 +1,33 @@
+---
+import { projects } from "@/data/projects";
+import CardProject from "../cards/CardProject.astro";
+---
+
+<section class="mb-section-gap" id="proyectos">
+  <div class="text-center mb-12">
+    <span
+      class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg inline-block mb-4"
+      >Mis Proyectos</span
+    >
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">
+      Echa un vistazo a mi trabajo
+    </h2>
+    <p class="font-body-md text-body-md text-muted-foreground">
+      He trabajado en una variedad de proyectos, desde sitios web simples hasta
+      aplicaciones web complejas.
+    </p>
+  </div>
+  <div class="bento-grid">
+    {
+      projects.map((project) => (
+        <CardProject
+          name={project.name}
+          description={project.description}
+          link={project.link}
+          repositories={project.reposirories}
+          image={project.image}
+        />
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,48 @@
+---
+const { name, description, link, repositories, image } = Astro.props;
+---
+
+<article
+  class="group border border-border-subtle rounded-lg overflow-hidden bg-surface hover:border-primary transition-all duration-300 flex flex-col"
+>
+  <div
+    class="aspect-video w-full bg-surface-container-low relative overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 bg-linear-to-br from-surface-container to-white opacity-20 group-hover:scale-105 transition-transform duration-500"
+    >
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <img class="w-full h-full object-cover" src={image} alt={name} />
+    </div>
+  </div>
+  <div class="p-6 flex flex-col flex-1">
+    <div class="flex justify-between items-start mb-2">
+      <h3 class="font-headline-md text-headline-md text-primary">
+        {name}
+      </h3>
+    </div>
+    <p
+      class="font-body-md text-body-md text-muted-foreground mb-6 line-clamp-3"
+    >
+      {description}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-auto">
+      {
+        repositories.map((repo: string) => (
+          <a
+            href={repo}
+            target="_blank"
+            class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg inline-block"
+          >
+            Ver Repositorio
+          </a>
+        ))
+      }
+    </div>
+    <a href={link} class="text-white mt-4 bg-gray-400 rounded text-center"
+      >Vista Previa</a
+    >
+  </div>
+</article>
