@@ -26,3 +26,10 @@ export interface SocialNetwork {
   link: string;
   icon: string;
 }
+
+export interface Project {
+  name: string;
+  description: string;
+  links: string[];
+  image: string;
+}
