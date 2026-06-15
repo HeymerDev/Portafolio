@@ -1,0 +1,20 @@
+---
+const { link, socialName, icon } = Astro.props;
+---
+
+<a
+  class="group flex flex-col items-center gap-2"
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div
+    class="w-12 h-12 rounded-full border border-border-subtle flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all duration-300"
+  >
+    <span class="material-symbols-outlined">{icon}</span>
+  </div>
+  <span
+    class="font-label-sm text-label-sm text-muted-foreground group-hover:text-primary"
+    >{socialName}</span
+  >
+</a>

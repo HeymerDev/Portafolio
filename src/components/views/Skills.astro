@@ -1,0 +1,13 @@
+---
+import { skills } from "@/data/skills";
+import CardSkill from "../cards/CardSkill.astro";
+---
+
+<section class="mb-section-gap">
+  <h2 class="font-headline-md text-headline-md text-primary mb-6">
+    Habilidades
+  </h2>
+  <div class="flex flex-wrap gap-2">
+    {skills.map((skill) => <CardSkill name={skill.name} />)}
+  </div>
+</section>

@@ -1,0 +1,62 @@
+---
+import Navbar from "@/components/views/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "@/components/views/Hero.astro";
+import About from "@/components/views/About.astro";
+import WorkExperience from "@/components/views/WorkExperience.astro";
+import Education from "@/components/views/Education.astro";
+import Skills from "@/components/views/Skills.astro";
+import SocialNetworks from "@/components/views/SocialNetworks.astro";
+import Footer from "@/components/views/Footer.astro";
+import Projects from "@/components/views/Projects.astro";
+---
+
+<Layout>
+  <Navbar />
+  <main class="max-w-container-max mx-auto px-margin-page pb-section-gap">
+    <Hero />
+    <About />
+    <WorkExperience />
+    <Education />
+    <Skills />
+    <Projects />
+    <SocialNetworks />
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  // Simple scroll animation for the floating navbar
+  const nav = document.querySelector("nav");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      nav?.classList.add("shadow-md", "scale-[0.98]");
+    } else {
+      nav?.classList.remove("shadow-md", "scale-[0.98]");
+    }
+  });
+
+  // Add a smooth fade-in for sections
+  const observerOptions = {
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100", "translate-y-0");
+        entry.target.classList.remove("opacity-0", "translate-y-4");
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll("section").forEach((section) => {
+    section.classList.add(
+      "transition-all",
+      "duration-700",
+      "opacity-0",
+      "translate-y-4",
+    );
+    observer.observe(section);
+  });
+</script>

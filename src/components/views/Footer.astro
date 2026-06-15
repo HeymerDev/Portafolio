@@ -1,0 +1,32 @@
+---
+import { socialNetworks } from "@/data/SocialNetworks";
+
+const date = new Date();
+const year = date.getFullYear();
+---
+
+<footer
+  class="bg-background dark:bg-background border-t border-border-subtle dark:border-outline-variant"
+>
+  <div
+    class="max-w-container-max mx-auto py-12 px-margin-page flex flex-col md:flex-row justify-between items-center gap-4"
+  >
+    <span
+      class="font-label-sm text-label-sm text-muted-foreground dark:text-on-surface-variant"
+    >
+      &copy; {year} Desarrollador &amp; Emprendedor. Hecho con precisión.
+    </span>
+    <div class="flex gap-6">
+      {
+        socialNetworks.map((network) => (
+          <a
+            class="font-label-sm text-label-sm text-muted-foreground dark:text-on-surface-variant hover:text-primary underline transition-opacity duration-200"
+            href="#"
+          >
+            {network.name}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>
