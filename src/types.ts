@@ -30,6 +30,7 @@ export interface SocialNetwork {
 export interface Project {
   name: string;
   description: string;
-  links: string[];
+  link: string;
+  reposirories: string[];
   image: string;
 }
