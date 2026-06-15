@@ -41,8 +41,14 @@ const { name, description, link, repositories, image } = Astro.props;
         ))
       }
     </div>
-    <a href={link} class="text-white mt-4 bg-gray-400 rounded text-center"
-      >Vista Previa</a
-    >
+    {
+      link ? (
+        <a href={link} class="text-white mt-4 bg-gray-400 rounded text-center">
+          Vista Previa
+        </a>
+      ) : (
+        <p class="text-center text-primary mt-4">Proyecto en Desarollo</p>
+      )
+    }
   </div>
 </article>
