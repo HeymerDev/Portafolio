@@ -10,7 +10,7 @@ export const projects: Project[] = [
       "https://github.com/HeymerDev/dev-tree-frontend",
       "https://github.com/HeymerDev/dev-tree-backend",
     ],
-    image: "../../src/assets/projects/devtree.webp",
+    image: "/projects/devtree.webp",
   },
   {
     name: "CashTracker",
@@ -21,7 +21,7 @@ export const projects: Project[] = [
       "https://github.com/HeymerDev/cash-tracker-backend",
       "https://github.com/HeymerDev/cash-tracker-frontend",
     ],
-    image: "../../src/assets/projects/cashtracker.webp",
+    image: "/projects/cashtracker.webp",
   },
   {
     name: "Costeñol",
@@ -29,6 +29,6 @@ export const projects: Project[] = [
       "Mini compilador basado en un lenguaje de programación llamado Costeñol, el cual es un lenguaje de programación basado en español, con una sintaxis sencilla y facil de aprender. <br/><br/>Tecnologias usadas: JavaScript, NodeJS.",
     link: "https://compilatorjs.netlify.app/",
     reposirories: ["https://github.com/HeymerDev/compilator-js"],
-    image: "../../src/assets/projects/compilator.webp",
+    image: "/projects/compilator.webp",
   },
 ];
