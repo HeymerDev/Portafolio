@@ -43,7 +43,11 @@ const { name, description, link, repositories, image } = Astro.props;
     </div>
     {
       link ? (
-        <a href={link} class="text-white mt-4 bg-gray-400 rounded text-center">
+        <a
+          href={link}
+          class="text-white mt-4 bg-gray-400 rounded text-center"
+          target="_blank"
+        >
           Vista Previa
         </a>
       ) : (

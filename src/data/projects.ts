@@ -16,7 +16,7 @@ export const projects: Project[] = [
     name: "CashTracker",
     description:
       "Proyecto de seguimiento de gastos personales, donde puedes registrar tus ingresos y gastos, y visualizar tus finanzas de una manera rapida y sencilla. <br/><br/>Tecnologias usadas: NextJS, NodeJS, Express, PostgreSQL, Sequelize, TailwindCSS.",
-    link: "",
+    link: "https://cash-tracker-frontend-eight.vercel.app/",
     reposirories: [
       "https://github.com/HeymerDev/cash-tracker-backend",
       "https://github.com/HeymerDev/cash-tracker-frontend",
@@ -30,5 +30,17 @@ export const projects: Project[] = [
     link: "https://compilatorjs.netlify.app/",
     reposirories: ["https://github.com/HeymerDev/compilator-js"],
     image: "/projects/compilator.webp",
+  },
+
+  {
+    name: "Gestor de prestamos de equipos tecnológicos",
+    description:
+      "Sistema para gestionar préstamos de equipos tecnológicos en una institución. Tecnologias usadas: NextJS, NodeJS, Express, PostgreSQL, TailwindCSS.",
+    link: "https://equipment-loan-management.vercel.app/",
+    reposirories: [
+      "https://github.com/HeymerDev/equipment-loan-management",
+      "https://github.com/HeymerDev/equipment-loan-management",
+    ],
+    image: "/projects/equip-loan.webp",
   },
 ];
