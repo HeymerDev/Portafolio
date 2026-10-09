@@ -9,6 +9,6 @@ export const educations: Education[] = [
   {
     schoolName: "Cop. Universitaria Latinoamericana",
     degree: "Ingeniero de Sistemas y Computacion",
-    schoolAges: "Agosto 2022 - Actualidad (8vo semestre)",
+    schoolAges: "Agosto 2022 - Actualidad (9no semestre)",
   },
 ];

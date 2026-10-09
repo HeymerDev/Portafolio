@@ -31,6 +31,7 @@ export interface Project {
   name: string;
   description: string;
   link: string;
-  reposirories: string[];
+  repositories: string[];
   image: string;
+  technologies: string[];
 }

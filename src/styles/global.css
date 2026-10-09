@@ -54,7 +54,7 @@
 
   /* --- Spacing --- */
   --spacing-section-gap: 5rem;
-  --spacing-container-max: 800px;
+  --spacing-container-max: 830px;
   --spacing-margin-page: 1.5rem;
   --spacing-gutter: 1rem;
   --spacing-stack-gap: 1.5rem;
@@ -98,6 +98,16 @@
   --text-body-lg--font-weight: 400;
 }
 
+/* Contenedor compartido: el contenido mide container-max y el margen queda por fuera */
+@utility container-page {
+  width: 100%;
+  max-width: calc(
+    var(--spacing-container-max) + 2 * var(--spacing-margin-page)
+  );
+  margin-inline: auto;
+  padding-inline: var(--spacing-margin-page);
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     "FILL" 0,
@@ -106,6 +116,19 @@
     "opsz" 24;
   display: inline-block;
   vertical-align: middle;
+}
+
+/* El scroll suave va en html porque es el elemento que hace scroll;
+   scroll-padding-top evita que el navbar fijo tape la sección al saltar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {

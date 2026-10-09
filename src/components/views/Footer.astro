@@ -9,7 +9,7 @@ const year = date.getFullYear();
   class="bg-background dark:bg-background border-t border-border-subtle dark:border-outline-variant"
 >
   <div
-    class="max-w-container-max mx-auto py-12 px-margin-page flex flex-col md:flex-row justify-between items-center gap-4"
+    class="container-page py-12 flex flex-col md:flex-row justify-between items-center gap-4"
   >
     <span
       class="font-label-sm text-label-sm text-muted-foreground dark:text-on-surface-variant"
@@ -21,7 +21,7 @@ const year = date.getFullYear();
         socialNetworks.map((network) => (
           <a
             class="font-label-sm text-label-sm text-muted-foreground dark:text-on-surface-variant hover:text-primary underline transition-opacity duration-200"
-            href="#"
+            href={network.link}
           >
             {network.name}
           </a>
