@@ -54,7 +54,7 @@
 
   /* --- Spacing --- */
   --spacing-section-gap: 5rem;
-  --spacing-container-max: 800px;
+  --spacing-container-max: 830px;
   --spacing-margin-page: 1.5rem;
   --spacing-gutter: 1rem;
   --spacing-stack-gap: 1.5rem;
@@ -96,6 +96,16 @@
   --text-body-lg: 18px;
   --text-body-lg--line-height: 1.6;
   --text-body-lg--font-weight: 400;
+}
+
+/* Contenedor compartido: el contenido mide container-max y el margen queda por fuera */
+@utility container-page {
+  width: 100%;
+  max-width: calc(
+    var(--spacing-container-max) + 2 * var(--spacing-margin-page)
+  );
+  margin-inline: auto;
+  padding-inline: var(--spacing-margin-page);
 }
 
 .material-symbols-outlined {
