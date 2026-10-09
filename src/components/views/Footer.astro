@@ -21,7 +21,7 @@ const year = date.getFullYear();
         socialNetworks.map((network) => (
           <a
             class="font-label-sm text-label-sm text-muted-foreground dark:text-on-surface-variant hover:text-primary underline transition-opacity duration-200"
-            href="#"
+            href={network.link}
           >
             {network.name}
           </a>
