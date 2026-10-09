@@ -108,6 +108,19 @@
   vertical-align: middle;
 }
 
+/* El scroll suave va en html porque es el elemento que hace scroll;
+   scroll-padding-top evita que el navbar fijo tape la sección al saltar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
